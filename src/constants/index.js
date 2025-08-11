@@ -19,7 +19,7 @@ export const SOCIAL_LINKS = {
   email: 'mailto:arunrajasekaran1209@gmail.com',
   leetcode: 'https://leetcode.com/u/arunrajasekaran1209/',
   resume:
-    'https://docs.google.com/document/d/1TZdzuoJwAkErqRY7Pn3FtwBJQzxgSIwa/export?format=pdf',
+    'https://drive.google.com/file/d/1EhHpmkpIvTgxv4u6ZAPswjbdggI_jV_z/view?usp=drive_link',
 };
 
 // Technologies with Icons
