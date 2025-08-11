@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   location: 'Coimbatore, India',
   college: 'Sri Eshwar College Of Engineering',
   educator: 'Program Professor',
-  number: '6474181274'
+  number: '6374181274'
 };
 
 // Social Links
