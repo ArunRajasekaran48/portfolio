@@ -13,68 +13,70 @@ const Works = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {MY_WORKS.map((work, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl"
-            >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-white">{work.title}</h3>
-                <p className="text-gray-300 mb-4 leading-relaxed">{work.description}</p>
+        <div className="relative">
+          <div className="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-800">
+            {MY_WORKS.map((work, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-[350px] md:w-[400px] bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl snap-center"
+              >
+                <div className="p-6 h-full flex flex-col">
+                  <h3 className="text-xl font-semibold mb-3 text-white">{work.title}</h3>
+                  <p className="text-gray-300 mb-4 leading-relaxed flex-grow">{work.description}</p>
 
-                {work.technologies && (
-                  <div className="mb-4">
-                    <div className="flex flex-wrap gap-2">
-                      {work.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-3 py-1 bg-gray-700 text-blue-400 text-xs rounded-full">
-                          {tech}
-                        </span>
-                      ))}
+                  {work.technologies && (
+                    <div className="mb-4">
+                      <div className="flex flex-wrap gap-2">
+                        {work.technologies.map((tech, techIndex) => (
+                          <span key={techIndex} className="px-3 py-1 bg-gray-700 text-blue-400 text-xs rounded-full">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
+                  )}
+
+                  <div className="flex space-x-4">
+                    {work.github && (
+                      <a
+                        href={work.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                      >
+                        <Github size={16} className="mr-2 flex-shrink-0" />
+                        Code
+                      </a>
+                    )}
+
+                    {work.youtube && (
+                      <a
+                        href={work.youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                      >
+                        <Youtube size={16} className="mr-2 flex-shrink-0" />
+                        Channel
+                      </a>
+                    )}
+
+                    {work.live && (
+                      <a
+                        href={work.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+                      >
+                        <ExternalLink size={16} className="mr-2 flex-shrink-0" />
+                        Live
+                      </a>
+                    )}
                   </div>
-                )}
-
-                <div className="flex space-x-4">
-                  {work.github && (
-                    <a
-                      href={work.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
-                    >
-                      <Github size={16} className="mr-2 flex-shrink-0" />
-                      Code
-                    </a>
-                  )}
-
-                  {work.youtube && (
-                    <a
-                      href={work.youtube}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors translate-y-3"
-                    >
-                      <Youtube size={16} className="mr-2 flex-shrink-0" />
-                      Channel
-                    </a>
-                  )}
-
-                  {work.live && (
-                    <a
-                      href={work.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
-                    >
-                      <ExternalLink size={16} className="mr-2 flex-shrink-0" />
-                      Live
-                    </a>
-                  )}
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
