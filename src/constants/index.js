@@ -58,10 +58,17 @@ export const MY_WORKS = [
     github: 'https://github.com/ArunRajasekaran48/MERN-PetAdoption-Platform',
   },
   {
+    title: 'Truckshare',
+    description:
+      'A microservices-based logistics platform connecting businesses with truck owners, enabling shipment requests dynamic truck matching, secure booking with payment updates, and real-time GPS tracking for seamless and transparent transportation.',
+    technologies: ['Spring Boot Microservices', 'PostgreSQL', 'Eureka', 'API Gateway', 'Resilience4j','React'],
+    github: 'https://github.com/ArunRajasekaran48/Truckshare',
+  },
+  {
     title: 'Inventory Stock Alert Tool',
     description:
       'A smart inventory management system with real-time stock alerts, automated notifications and separate interfaces for users and administrators.',
     technologies: ['React', 'Spring Boot', 'MYSQL'],
     github: 'https://github.com/ArunRajasekaran48/Inventory-StockAlert-Tool',
-  },
+  }
 ];
