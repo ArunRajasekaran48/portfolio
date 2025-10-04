@@ -31,6 +31,7 @@ export const TECHNOLOGIES = [
   { name: 'Tailwind css', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
   { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
   { name: 'Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
+  { name: 'Javascript',icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
   { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
   { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
   { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
@@ -47,7 +48,7 @@ export const MY_WORKS = [
   {
     title: 'Program Professor',
     description:
-      'Grown YouTube channel "Program Professor" to over 950 subscribers by delivering beginner-friendly Java programming tutorials that simplify complex concepts into easy-to-follow lessons.',
+      'Grown YouTube channel "Program Professor" to over 1050+ subscribers by delivering beginner-friendly Java programming tutorials that simplify complex concepts into easy-to-follow lessons.',
     youtube: 'https://www.youtube.com/@ProgramProfessor',
   },
   {
